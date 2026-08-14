@@ -524,20 +524,36 @@ section {
   padding: var(--space-lg) 0;
 }
 
-.stat-banner .container {
-  position: relative;
+.stat-viewport {
   overflow: hidden;
 }
 
 .stat-track {
   display: flex;
-  transition: transform 0.5s ease;
+  width: max-content;
+  animation: stat-marquee 24s linear infinite;
+}
+
+.stat-viewport:hover .stat-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-track {
+    animation: none;
+  }
+}
+
+@keyframes stat-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 .stat-slide {
-  flex: 0 0 100%;
-  width: 100%;
+  flex: 0 0 auto;
+  width: 260px;
   text-align: center;
+  padding: 0 var(--space-md);
 }
 
 .stat-banner .stat-number {
@@ -550,27 +566,6 @@ section {
 .stat-banner .stat-label {
   font-size: 0.9rem;
   opacity: 0.85;
-}
-
-.stat-dots {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-xs);
-  margin-top: var(--space-md);
-}
-
-.stat-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.35);
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.stat-dot[aria-current="true"] {
-  background: var(--color-white);
 }
 
 /* ==========================================================================
