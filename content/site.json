@@ -1,0 +1,7 @@
+{
+  "donation": {
+    "pixKey": "SUBSTITUIR_PELA_CHAVE_PIX_OFICIAL",
+    "pixKeyType": "CNPJ",
+    "mercadoPagoUrl": ""
+  }
+}

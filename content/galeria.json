@@ -1,0 +1,9 @@
+{
+  "photos": [
+    { "src": "assets/img/foto-meninos-quadra.jpg", "alt": "Duas crianças sorrindo com a camisa do Projeto Acolher, fazendo sinal de paz durante atividade no ginásio." },
+    { "src": "assets/img/foto-time-futsal.jpg", "alt": "Grupo de meninas do Projeto Acolher reunidas após atividade esportiva ao ar livre." },
+    { "src": "assets/img/foto-meninas-sentadas.jpg", "alt": "Duas adolescentes com uniforme esportivo do Projeto Acolher sentadas em um muro, sorrindo para a foto." },
+    { "src": "assets/img/foto-menina-trave.jpg", "alt": "Menina do Projeto Acolher sorrindo em frente a uma rede esportiva, com vista da comunidade ao fundo." },
+    { "src": "assets/img/foto-ginastica.jpg", "alt": "Grupo de meninas com uniforme de ginástica artística do Projeto Acolher, sorrindo e comemorando." }
+  ]
+}

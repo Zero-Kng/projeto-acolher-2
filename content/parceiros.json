@@ -1,0 +1,13 @@
+{
+  "intro": "Contamos com o apoio de instituições públicas e privadas que tornam nosso trabalho possível.",
+  "partners": [
+    { "name": "Departamento de Comunicação - PUC-Rio", "url": "https://www.puc-rio.br/ensinopesq/ccg/comunicacao.html" },
+    { "name": "UNIFACHA", "url": "https://facha.edu.br/" },
+    { "name": "Bar do Adão", "url": "https://www.bardoadao.com.br/" },
+    { "name": "ALOB Sports", "url": "https://alobsports.com.br/" },
+    { "name": "Academia Pérolas Negras", "url": "https://academiaperolasnegras.org/" },
+    { "name": "Viva Rio", "url": "https://vivario.org.br/" },
+    { "name": "Axx Care", "url": "https://axxcare.com.br/" },
+    { "name": "Clube de Regatas do Flamengo", "url": "https://www.flamengo.com.br/" }
+  ]
+}

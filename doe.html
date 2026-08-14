@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doe agora | Associação Projeto Acolher</title>
+<meta name="description" content="Faça uma doação via PIX ou Mercado Pago para apoiar o Projeto Acolher.">
+<link rel="icon" href="assets/img/logo.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.png" alt="Logo Associação Projeto Acolher" width="48" height="48">
+      <span class="brand-name">Projeto Acolher<span>Associação</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="atividades.html">Atividades</a></li>
+        <li><a href="parceiros.html">Parceiros</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a class="nav-cta" href="doe.html" aria-current="page">Doar agora</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Sua contribuição transforma vidas</span>
+        <h1>Doe agora</h1>
+        <p>Toda doação sustenta atividades esportivas, educativas, culturais e de assistência social para crianças e adolescentes das comunidades Pavão-Pavãozinho e Cantagalo.</p>
+      </div>
+      <div class="card-grid">
+        <div class="donate-box">
+          <h3>Doar via PIX</h3>
+          <p>Copie a chave abaixo no aplicativo do seu banco. É instantâneo, seguro e não tem taxas.</p>
+          <div class="pix-key">
+            <span data-pix-key id="pix-key">Carregando chave PIX…</span>
+          </div>
+          <p class="form-note" data-pix-type></p>
+          <button class="copy-btn" data-copy-target="#pix-key" type="button">Copiar chave</button>
+        </div>
+        <div class="donate-box">
+          <h3>Doar com cartão ou PIX recorrente</h3>
+          <p>Prefere cartão de crédito ou quer doar todo mês automaticamente? Use nosso link oficial de pagamento, com processamento feito com segurança diretamente pela plataforma de pagamentos, sem passar pelos nossos servidores.</p>
+          <a class="btn btn-primary" data-mp-link href="#" target="_blank" rel="noopener" hidden>Doar pelo Mercado Pago</a>
+          <p class="form-note" style="margin-bottom: 0;">Link de pagamento ainda não configurado pela equipe. Fale com a gente pelo WhatsApp se quiser doar por outro meio enquanto isso.</p>
+        </div>
+      </div>
+      <div class="card mt-32">
+        <h3>Transparência</h3>
+        <p style="margin-bottom: 0;">A Associação Projeto Acolher é uma entidade sem fins lucrativos. Em caso de dúvidas sobre prestação de contas ou sobre como sua doação é utilizada, fale com a gente pelo <a href="contato.html">canal de contato</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" alt="" width="40" height="40">
+          <strong>Associação Projeto Acolher</strong>
+        </div>
+        <p>Associação sem fins lucrativos que acolhe crianças e adolescentes das comunidades Pavão-Pavãozinho e Cantagalo, no Rio de Janeiro, promovendo inclusão social através do esporte, da educação e da cultura.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <a href="atividades.html">Atividades</a>
+        <a href="parceiros.html">Parceiros</a>
+        <a href="voluntariado.html">Voluntariado</a>
+        <a href="doe.html">Doe agora</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="mailto:contato@acolhendo.org.br">contato@acolhendo.org.br</a>
+        <a href="https://wa.me/5521995969795" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/aprojetoacolher/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Associação Projeto Acolher. Todos os direitos reservados.</span>
+      <span><a href="privacidade.html">Privacidade</a></span>
+    </div>
+  </div>
+</footer>
+<a class="whatsapp-fab" href="https://wa.me/5521995969795" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">💬 WhatsApp</a>
+
+<script src="js/main.js"></script>
+<script src="js/content.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
