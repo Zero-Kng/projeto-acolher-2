@@ -191,7 +191,7 @@ p { margin-top: 0; }
 .nav-cta {
   background: var(--color-coral);
   color: var(--color-ink) !important;
-  padding: 0.7rem 2.4rem;
+  padding: 0.7rem 2.4rem !important;
   border-radius: 20px;
   border-bottom: none !important;
   line-height: 1.2;
