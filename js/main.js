@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".main-nav");
 

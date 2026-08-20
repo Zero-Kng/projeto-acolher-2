@@ -1,0 +1,38 @@
+# Sobe o site localmente exatamente como ele roda em producao:
+#
+#   docker compose up --build                  -> http://localhost:8080
+#   SITE_PORT=8088 docker compose up --build   -> http://localhost:8088
+#
+# Vale a pena usar isto em vez do Live Server / python -m http.server quando o
+# assunto for cabecalho de seguranca ou CSP: so aqui os cabecalhos reais sao
+# aplicados, entao um <script> inline quebra no seu navegador antes de quebrar
+# no ar. Para so editar HTML/CSS, o Live Server continua mais pratico.
+
+services:
+  site:
+    build: .
+    image: projeto-acolher:local
+    container_name: projeto-acolher
+    # Porta do host configuravel: se 8080 ja estiver ocupada por outro
+    # projeto seu, rode com SITE_PORT=8088 docker compose up.
+    ports:
+      - "${SITE_PORT:-8080}:8080"
+    restart: unless-stopped
+
+    # O container nao escreve nada em disco: o site e estatico e o nginx roda
+    # como nao-root. Os tmpfs cobrem os unicos caminhos que ele precisa gravar.
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /var/cache/nginx
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/healthz"]
+      interval: 30s
+      timeout: 3s
+      start_period: 5s
+      retries: 3

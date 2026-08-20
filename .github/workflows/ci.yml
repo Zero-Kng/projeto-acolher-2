@@ -1,0 +1,85 @@
+# Pipeline de validacao. NAO faz deploy: a publicacao na KingHost continua
+# manual, por FTP. O que roda aqui e o que o navegador nao consegue te dizer
+# antes de o site ja estar no ar.
+
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Um push novo cancela a execucao anterior do mesmo branch.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qualidade:
+    name: HTML e JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      # Regra que importa aqui: no-inline-style. O CSP do .htaccess nao permite
+      # style= nem <script> inline — sem esta checagem, esse tipo de erro so
+      # aparece em producao, e silenciosamente.
+      - name: Validar HTML
+        run: npm run validate:html
+
+      # content/*.json e editado a mao por FTP. Uma virgula sobrando derruba a
+      # lista de parceiros e o carrossel.
+      - name: Validar content/*.json
+        run: npm run validate:json
+
+  links-internos:
+    name: Links internos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # --offline: so links locais, sem tocar a internet. Deterministico, nunca
+      # fica vermelho porque um site de terceiro caiu. Os links externos sao
+      # checados semanalmente em links-externos.yml.
+      - name: lychee (offline)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress *.html
+          fail: true
+
+  container:
+    name: Container + smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build da imagem
+        run: docker build -t projeto-acolher:ci .
+
+      - name: Subir o container
+        run: |
+          docker run -d --name site -p 8080:8080 \
+            --read-only --tmpfs /tmp --tmpfs /var/cache/nginx \
+            --cap-drop ALL --security-opt no-new-privileges:true \
+            projeto-acolher:ci
+
+      # Testa o site servido, nao o arquivo em disco: status HTTP, cabecalhos
+      # de seguranca, pagina 404, e se todo asset interno resolve num sistema
+      # de arquivos case-sensitive (o Windows esconde esse tipo de erro).
+      - name: Smoke test
+        run: bash scripts/smoke-test.sh http://localhost:8080
+
+      - name: Logs do nginx
+        if: failure()
+        run: docker logs site

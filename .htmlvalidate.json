@@ -1,0 +1,10 @@
+{
+  "extends": ["html-validate:recommended", "html-validate:document"],
+  "rules": {
+    "no-inline-style": "error",
+    "require-sri": "off",
+    "attribute-boolean-style": "off",
+    "heading-level": "warn",
+    "long-title": "warn"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "projeto-acolher-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional da Associacao Projeto Acolher",
+  "scripts": {
+    "validate:html": "html-validate \"*.html\"",
+    "validate:json": "node scripts/validate-json.mjs",
+    "validate": "npm run validate:html && npm run validate:json",
+    "start": "docker compose up --build",
+    "smoke": "bash scripts/smoke-test.sh"
+  },
+  "devDependencies": {
+    "html-validate": "^10.0.0"
+  }
+}

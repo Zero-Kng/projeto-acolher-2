@@ -714,9 +714,12 @@ section {
    ========================================================================== */
 
 .mt-32 { margin-top: 2rem; }
+.mb-0 { margin-bottom: 0; }
 .container-narrow { max-width: 760px; }
 .card-solo { max-width: 480px; margin: 0 auto; }
 .justify-center { justify-content: center; }
+.measure { max-width: 65ch; }
+.measure-wide { max-width: 68ch; }
 
 /* ==========================================================================
    Botao flutuante do WhatsApp
@@ -799,6 +802,23 @@ section {
 
 .cta .btn-outline:hover {
   background: var(--color-teal-tint);
+}
+
+/* Variante clara do CTA: fundo branco em vez do coral. Precisa vir depois das
+   regras .cta acima — a especificidade e a mesma, quem decide e a ordem. */
+.cta-light {
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.cta-light p {
+  color: var(--color-ink);
+}
+
+.cta-light .btn-outline {
+  background: transparent;
+  border-color: var(--color-teal-dark);
+  color: var(--color-teal-dark);
 }
 
 /* ==========================================================================

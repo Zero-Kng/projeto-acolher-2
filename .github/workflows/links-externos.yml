@@ -1,0 +1,38 @@
+# Links para fora do dominio ficam fora do CI de push de proposito: se o site
+# de um parceiro cair, o problema e real, mas nao e do seu commit — nao faz
+# sentido bloquear seu trabalho por isso. Roda semanalmente e sob demanda.
+
+name: Links externos
+
+on:
+  schedule:
+    # Toda segunda-feira, 09:00 UTC (06:00 em Brasilia).
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lychee:
+    name: Checar links externos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Instagram e wa.me respondem 401/403 para qualquer cliente que nao seja
+      # um navegador de verdade: manter esses dois aqui geraria alarme falso
+      # toda semana. Confira os dois a mao quando mexer no rodape.
+      # 429 e aceito porque rate limit nao e link quebrado.
+      - name: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-retries 3
+            --timeout 20
+            --accept 200..=299,429
+            --exclude '^https://www\.instagram\.com/'
+            --exclude '^https://wa\.me/'
+            *.html content/parceiros.json
+          fail: true

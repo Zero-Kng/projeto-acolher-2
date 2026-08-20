@@ -17,7 +17,7 @@
       <img src="assets/img/logo.png" alt="Logo Associação Projeto Acolher" width="48" height="48">
       <span class="brand-name">Projeto Acolher</span>
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
     <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
       <ul>
         <li><a href="index.html" aria-current="page">Início</a></li>
@@ -44,7 +44,7 @@
           <a href="voluntariado.html" class="btn btn-outline">Quero ser voluntário(a)</a>
         </div>
       </div>
-      <div class="hero-figure hero-carousel" data-carousel aria-roledescription="carrossel" aria-label="Fotos do Projeto Acolher">
+      <div class="hero-figure hero-carousel" data-carousel role="group" aria-roledescription="carrossel" aria-label="Fotos do Projeto Acolher">
         <div class="carousel-track" data-carousel-track>
           <p class="content-loading">Foto institucional a ser adicionada pela equipe</p>
         </div>
@@ -131,7 +131,7 @@
       <div class="section-header">
         <span class="eyebrow">Quem somos</span>
         <h2>Nossa história</h2>
-        <p style="max-width: 65ch;">A Associação Projeto Acolher é uma instituição sem fins lucrativos destinada a acolher crianças e adolescentes das comunidades Pavão-Pavãozinho e Cantagalo, desenvolvendo sua educação e inclusão social.</p>
+        <p class="measure">A Associação Projeto Acolher é uma instituição sem fins lucrativos destinada a acolher crianças e adolescentes das comunidades Pavão-Pavãozinho e Cantagalo, desenvolvendo sua educação e inclusão social.</p>
       </div>
       <div class="card-grid">
         <div class="card">
@@ -170,12 +170,12 @@
 
   <section class="section-alt">
     <div class="container">
-      <div class="cta" style="background: var(--color-white); box-shadow: var(--shadow-sm); text-align: center;">
+      <div class="cta cta-light">
         <h2>Ajude a transformar mais futuros</h2>
-        <p style="color: var(--color-ink);">Sua contribuição, em tempo ou em recursos, sustenta atividades esportivas, educativas e de assistência social para centenas de crianças e adolescentes.</p>
+        <p>Sua contribuição, em tempo ou em recursos, sustenta atividades esportivas, educativas e de assistência social para centenas de crianças e adolescentes.</p>
         <div class="hero-actions justify-center">
           <a href="doe.html" class="btn btn-primary">Fazer uma doação</a>
-          <a href="voluntariado.html" class="btn btn-outline" style="background: transparent; border-color: var(--color-teal-dark); color: var(--color-teal-dark);">Ser voluntário(a)</a>
+          <a href="voluntariado.html" class="btn btn-outline">Ser voluntário(a)</a>
         </div>
       </div>
     </div>
@@ -218,6 +218,5 @@
 
 <script src="js/main.js"></script>
 <script src="js/content.js"></script>
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

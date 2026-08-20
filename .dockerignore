@@ -1,0 +1,24 @@
+# A imagem so precisa dos arquivos do site. Tudo abaixo fica de fora do
+# contexto de build (build mais rapido e nenhum arquivo de infra vazando
+# para dentro da imagem).
+#
+# Nota: nginx/ NAO pode entrar nesta lista — o Dockerfile copia
+# nginx/default.conf para /etc/nginx/conf.d/, entao ele precisa estar no
+# contexto de build. Ele nao vai para a raiz do site.
+.git
+.github
+.gitignore
+.dockerignore
+.htaccess
+.nojekyll
+.htmlvalidate.json
+Dockerfile
+docker-compose.yml
+package.json
+package-lock.json
+node_modules/
+scripts/
+*.md
+_to_delete/
+.DS_Store
+Thumbs.db
