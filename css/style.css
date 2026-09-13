@@ -183,7 +183,7 @@ p { margin-top: 0; }
 }
 
 .main-nav a:hover,
-.main-nav a[aria-current="page"] {
+.main-nav a[aria-current] {
   color: var(--color-teal-dark);
   border-bottom-color: var(--color-coral);
 }
@@ -586,6 +586,79 @@ section {
   border-top-color: var(--color-teal-medium);
 }
 
+/* Card clicavel: leva para a pagina detalhada da atividade */
+.card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  min-height: 120px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link h3 {
+  margin: 0;
+}
+
+.card-link::after {
+  content: "\2192";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-coral);
+  transition: transform 0.2s ease;
+}
+
+.card-accent-teal.card-link::after {
+  color: var(--color-teal-medium);
+}
+
+.card-link:hover,
+.card-link:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-link:hover h3,
+.card-link:focus-visible h3 {
+  text-decoration: underline;
+}
+
+.card-link:hover::after,
+.card-link:focus-visible::after {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-link,
+  .card-link::after {
+    transition: none;
+  }
+
+  .card-link:hover,
+  .card-link:focus-visible {
+    transform: none;
+  }
+
+  .card-link:hover::after,
+  .card-link:focus-visible::after {
+    transform: none;
+  }
+}
+
+/* Link de retorno no topo das paginas internas */
+.back-link {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.back-link a {
+  color: var(--color-teal-medium);
+}
+
 .card h3 {
   margin-bottom: var(--space-xs);
 }
@@ -604,13 +677,31 @@ section {
   gap: 0.4rem;
 }
 
-.card-list li {
+.card-list li,
+.card-tag {
   background: var(--color-teal-tint);
   color: var(--color-teal-dark);
   font-size: 0.8rem;
   font-weight: 700;
   padding: 0.25rem 0.7rem;
   border-radius: var(--radius-full);
+}
+
+.card-tag {
+  display: inline-block;
+  margin-top: var(--space-xs);
+}
+
+/* Alinha a etiqueta de participantes na base, para que os cards de uma
+   mesma linha da grade tenham as etiquetas na mesma altura. */
+.card-modalidade {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-modalidade .card-tag {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 /* ==========================================================================

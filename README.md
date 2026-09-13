@@ -19,7 +19,12 @@ A estrutura de páginas e a arquitetura de conteúdo foram alinhadas com o rascu
 
 ```
 index.html          Home (hero com carrossel de fotos, estatísticas, história, missão/visão/valores, CTA)
-atividades.html      Esportes, educação, cultura, convivência, atendimento às famílias
+atividades.html      Hub das atividades — 5 cards clicáveis que levam às páginas abaixo
+atividades-esportes.html      Esportes
+atividades-educacao.html      Educação e Reforço Escolar
+atividades-cultura.html       Cultura, Arte e Lazer
+atividades-convivencia.html   Serviço de Convivência e Fortalecimento de Vínculos
+atividades-familias.html      Atendimento às Famílias
 parceiros.html       Lista de parceiros (carregada de content/parceiros.json)
 voluntariado.html    Como ser voluntário(a) — canais diretos, sem formulário
 doe.html              Doação via PIX / Mercado Pago (ver pendência abaixo) + transparência
