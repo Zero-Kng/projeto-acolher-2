@@ -4,7 +4,7 @@
     "no-inline-style": "error",
     "require-sri": "off",
     "attribute-boolean-style": "off",
-    "heading-level": "warn",
+    "heading-level": "error",
     "long-title": "warn"
   }
 }

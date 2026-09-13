@@ -8,6 +8,26 @@
     return node;
   }
 
+  // Icone de link externo desenhado como SVG. O piso de qualidade do projeto
+  // nao aceita glifo Unicode no lugar de um sistema de icones, e este arquivo
+  // nunca usa innerHTML — por isso e montado pela DOM API.
+  function externalIcon() {
+    var NS = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+    svg.setAttribute("fill", "none");
+    svg.setAttribute("stroke", "currentColor");
+    svg.setAttribute("stroke-width", "2.2");
+    svg.setAttribute("stroke-linecap", "round");
+    svg.setAttribute("stroke-linejoin", "round");
+    var path = document.createElementNS(NS, "path");
+    path.setAttribute("d", "M8 16 16 8M9 8h7v7");
+    svg.appendChild(path);
+    return svg;
+  }
+
   function fetchJSON(path) {
     return fetch(path, { cache: "no-store" }).then(function (res) {
       if (!res.ok) throw new Error("Falha ao carregar " + path);
@@ -23,10 +43,12 @@
       (data.partners || []).forEach(function (p) {
         var item = el("li");
         if (p.url) {
-          var link = el("a", null, p.name);
+          var link = el("a");
           link.href = p.url;
           link.rel = "noopener noreferrer";
           link.target = "_blank";
+          link.appendChild(el("span", null, p.name));
+          link.appendChild(externalIcon());
           item.appendChild(link);
         } else {
           item.textContent = p.name;

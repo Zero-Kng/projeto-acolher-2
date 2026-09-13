@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-13T00:00:00Z",
+  "title": "Design System: Associação Projeto Acolher",
+  "extensions": {
+    "colorMeta": {
+      "coral": {
+        "role": "primary",
+        "displayName": "Coral de Acolhimento",
+        "canonical": "#ED6965",
+        "note": "Amostrado por pixel da logo. Ação e só ação. Só recebe texto escuro.",
+        "tonalRamp": ["#3A1110", "#5C1C1A", "#7E2825", "#A8332F", "#D8524E", "#ED6965", "#F5A19E", "#FCE6E5"]
+      },
+      "coral-hover": {
+        "role": "primary",
+        "displayName": "Coral Clareado (hover)",
+        "canonical": "#F07D79",
+        "note": "Hover do botão primário. Com --on-coral mede 5.52:1."
+      },
+      "coral-press": {
+        "role": "primary",
+        "displayName": "Coral Pressionado",
+        "canonical": "#D8524E",
+        "note": "Borda de 2px do botão primário e do CTA do menu."
+      },
+      "coral-deep": {
+        "role": "primary",
+        "displayName": "Coral Profundo",
+        "canonical": "#A8332F",
+        "note": "Anel de foco (3px, offset 3px) e traço de ícone de seta."
+      },
+      "teal-dark": {
+        "role": "secondary",
+        "displayName": "Teal Institucional",
+        "canonical": "#1B4041",
+        "note": "Âncora de superfície: faixa de números, rodapé, botão secundário, títulos de card.",
+        "tonalRamp": ["#0A1F20", "#123031", "#1B4041", "#255759", "#2C6B6D", "#5F7476", "#85CBCD", "#E4F2F2"]
+      },
+      "teal-press": {
+        "role": "secondary",
+        "displayName": "Teal Pressionado",
+        "canonical": "#123031",
+        "note": "Hover do botão secundário."
+      },
+      "teal-medium": {
+        "role": "secondary",
+        "displayName": "Teal de Ligação",
+        "canonical": "#2C6B6D",
+        "note": "Link no corpo do texto, botão de copiar, caret, scrollbar, accent-color."
+      },
+      "teal-light": {
+        "role": "secondary",
+        "displayName": "Teal Claro",
+        "canonical": "#85CBCD",
+        "note": "Decorativo por restrição de contraste (PRODUCT.md). Só fundo de ::selection."
+      },
+      "teal-tint": {
+        "role": "secondary",
+        "displayName": "Teal Lavado",
+        "canonical": "#E4F2F2",
+        "note": "Campo do painel de CTA e dos cards de acento; trilha da scrollbar."
+      },
+      "teal-tint-border": {
+        "role": "secondary",
+        "displayName": "Filete do Teal Lavado",
+        "canonical": "#C4E0E0",
+        "note": "Literal repetido três vezes no CSS (cards de acento, .cta, .cta-light) sem variável própria. Registrado como está no build."
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Creme da Marca",
+        "canonical": "#FAF7F2",
+        "note": "Chão da página e fundo do header sticky.",
+        "tonalRamp": ["#211F1B", "#413D36", "#625C51", "#847C6D", "#BDB4A7", "#DCD5CB", "#FAF7F2", "#FFFFFF"]
+      },
+      "white": { "role": "neutral", "displayName": "Branco", "canonical": "#FFFFFF", "note": "Campo elevado: card, caixa de doação, seção alternada." },
+      "ink": { "role": "neutral", "displayName": "Ink da Marca", "canonical": "#22303C", "note": "Texto principal e tinta da navegação." },
+      "ink-soft": { "role": "neutral", "displayName": "Ink Suave", "canonical": "#3C5257", "note": "Texto secundário, tinto de teal e nunca cinza neutro." },
+      "rule": { "role": "neutral", "displayName": "Filete", "canonical": "#DCD5CB", "note": "Borda de card e divisores sobre claro." },
+      "rule-strong": { "role": "neutral", "displayName": "Filete Forte", "canonical": "#BDB4A7", "note": "Só o campo da chave PIX." },
+      "on-coral": {
+        "role": "neutral",
+        "displayName": "Ink sobre Coral",
+        "canonical": "#1D2A34",
+        "note": "Derivado por acessibilidade: o ink da marca sobre coral mede 4.38:1, abaixo do mínimo AA de 4.5:1 para texto normal. Este dá 4.75:1 em repouso e 5.52:1 no hover clareado."
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "Borda de Controle",
+        "canonical": "#5F7476",
+        "note": "Derivado por acessibilidade: WCAG 1.4.11 exige 3:1 para limite de componente. Tinto de teal, 4.63:1 sobre o creme."
+      },
+      "on-dark": { "role": "neutral", "displayName": "Tinta sobre Escuro", "canonical": "#FFFFFF" },
+      "on-dark-soft": { "role": "neutral", "displayName": "Tinta Suave sobre Escuro", "canonical": "#B7D2D2", "note": "Texto secundário nos campos teal escuro; divisores são rgba(255,255,255,0.16)." },
+      "whatsapp": { "role": "tertiary", "displayName": "Verde WhatsApp Ajustado", "canonical": "#0F7A40", "note": "Verde de marca de terceiro corrigido para passar AA com texto branco. Hover literal #0C6534." }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Apenas o h1 da página. No herói, travado em 14ch. 34→64px, peso 800, tracking -0.032em: a compensação métrica pela ausência de display face." },
+      "headline": { "displayName": "Headline", "purpose": "h2 de seção. 25.6→41.6px." },
+      "title": { "displayName": "Title", "purpose": "h3 e os h2 compensados de card, caixa de doação e seções numeradas da política." },
+      "lead": { "displayName": "Lead", "purpose": "Parágrafo de abertura do herói (44ch) e subtítulo de seção (65ch), em ink suave." },
+      "body": { "displayName": "Body", "purpose": "Corpo geral, line-height 1.65, medida travada em 65ch." },
+      "label": { "displayName": "Label", "purpose": "Caixa alta com tracking 0.08em: títulos de coluna do rodapé (marcados como h2) e etiquetas de contagem." },
+      "stat": { "displayName": "Stat", "purpose": "Os quatro números da faixa de impacto, com font-variant-numeric: tabular-nums." },
+      "mono": { "displayName": "Mono", "purpose": "Exclusivamente a chave PIX." }
+    },
+    "shadows": [
+      { "name": "shadow-sm", "value": "0 1px 2px rgba(16, 16, 16, 0.07), 0 4px 12px rgba(16, 16, 16, 0.08)", "purpose": "Levantado leve: a seta do carrossel sobre a fotografia. Neutra de propósito, nunca tintada de marca." },
+      { "name": "shadow-md", "value": "0 4px 10px rgba(16, 16, 16, 0.12), 0 14px 34px rgba(16, 16, 16, 0.16)", "purpose": "Flutuante fixo: a pílula do WhatsApp, único elemento permanentemente fora do fluxo." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Easing único do sistema: entrada do herói, trilha do carrossel, translado da seta do card." },
+      { "name": "transition-state", "value": "0.15s ease", "purpose": "Duração padrão de troca de estado (cor de fundo, tinta, borda) em link, botão e card." },
+      { "name": "hero-rise", "value": "rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; delays 0 / 0.06s / 0.12s / 0.18s", "purpose": "O único momento autorado. Dentro de prefers-reduced-motion: no-preference, partindo de opacity 0.001 e translateY(14px), de modo que o estado padrão é o conteúdo já visível." },
+      { "name": "carousel-track", "value": "transform 0.55s cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Troca de foto no carrossel do herói." }
+    ],
+    "breakpoints": [
+      { "name": "stat-band", "value": "max-width: 760px", "purpose": "Faixa de números vai a 2 colunas." },
+      { "name": "nav-footer", "value": "max-width: 860px", "purpose": "Menu colapsa para botão Menu; rodapé vira coluna única." },
+      { "name": "hero", "value": "max-width: 900px", "purpose": "Herói vira coluna única; a fotografia sobe com order: -1 e 16/9." }
+    ],
+    "focusRing": { "value": "outline: 3px solid #A8332F; outline-offset: 3px; border-radius: 6px", "onDark": "outline-color: #ED6965", "purpose": "Foco visível em qualquer link, botão ou elemento com tabindex; troca para coral pleno sobre campos teal escuro." },
+    "browserSurfaces": {
+      "selection": "background: #85CBCD; color: #1B4041",
+      "caretColor": "#2C6B6D",
+      "accentColor": "#2C6B6D",
+      "scrollbar": "scrollbar-color: #2C6B6D #E4F2F2; scrollbar-width: thin; ::-webkit-scrollbar 12px, trilha #E4F2F2, polegar #2C6B6D em pílula com borda de 3px, hover #1B4041"
+    },
+    "constraints": [
+      "HTML/CSS/JS estático, sem build step.",
+      "CSP sem 'unsafe-inline': nenhum atributo style= e nenhum <script> inline; todo estilo vive em css/style.css.",
+      "Zero requisições a terceiros: nenhuma webfont externa e nenhum arquivo de fonte auto-hospedado no repositório — daí a pilha de sistema.",
+      "Header e rodapé duplicados em 13 arquivos HTML por decisão; qualquer mudança de componente global é replicada à mão.",
+      "WCAG 2.1 AA vinculante: 4.5:1 texto normal, 3:1 texto grande e limite de componente."
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão Primário",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "A ação. Único alvo coral dominante do viewport.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Quero doar</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.9rem 1.75rem; border-radius: 999px; font-size: 1.0625rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease; } .ds-btn-primary { background: #ED6965; border-color: #D8524E; color: #1D2A34; } .ds-btn-primary:hover { background: #F07D79; color: #1D2A34; } .ds-btn-primary:focus-visible { outline: 3px solid #A8332F; outline-offset: 3px; border-radius: 999px; }"
+    },
+    {
+      "name": "Botão Outline",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Ação de segunda ordem; recua para contorno e nunca disputa com o coral.",
+      "html": "<a class=\"ds-btn ds-btn-outline\" href=\"#\">Quero ser voluntário(a)</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.9rem 1.75rem; border-radius: 999px; font-size: 1.0625rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease; } .ds-btn-outline { background: transparent; color: #1B4041; border-color: #5F7476; font-weight: 700; } .ds-btn-outline:hover { background: #E4F2F2; border-color: #2C6B6D; color: #1B4041; } .ds-btn-outline:focus-visible { outline: 3px solid #A8332F; outline-offset: 3px; }"
+    },
+    {
+      "name": "CTA do Cabeçalho",
+      "kind": "nav",
+      "refersTo": "nav-cta",
+      "description": "A única peça coral do header, subordinada em tamanho e peso ao botão do herói.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><ul><li><a href=\"#\" aria-current=\"page\">Início</a></li><li><a href=\"#\">Atividades</a></li><li><a class=\"ds-nav-cta\" href=\"#\">Doar agora</a></li></ul></nav>",
+      "css": ".ds-nav { background: #FAF7F2; border-bottom: 1px solid #DCD5CB; padding: 0.8rem 1rem; } .ds-nav ul { display: flex; align-items: center; gap: 1.5rem; list-style: none; margin: 0; padding: 0; } .ds-nav a { color: #22303C; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 0.4rem 0; border-bottom: 2px solid transparent; transition: color 0.15s ease, border-color 0.15s ease; } .ds-nav a:hover, .ds-nav a[aria-current] { color: #1B4041; border-bottom-color: #ED6965; } .ds-nav-cta { background: #ED6965; border: 2px solid #D8524E; color: #1D2A34; font-weight: 700; padding: 0.5rem 1.1rem; border-radius: 999px; border-bottom-color: #D8524E; line-height: 1.3; } .ds-nav-cta:hover { background: #F07D79; color: #1D2A34; } .ds-nav a:focus-visible { outline: 3px solid #A8332F; outline-offset: 3px; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Campo branco com filete de 1px sobre o creme. Sem sombra: profundidade é sobreposição de campo.",
+      "html": "<div class=\"ds-card\"><h3>Como começamos</h3><p>O Projeto Acolher nasceu do trabalho da Pastoral da Criança e atua desde 2010 no Morro Pavão-Pavãozinho.</p></div>",
+      "css": ".ds-card { background: #FFFFFF; border: 1px solid #DCD5CB; border-radius: 12px; padding: 1.5rem; } .ds-card h3 { margin: 0 0 0.5rem; font-size: clamp(1.25rem, 1.12rem + 0.6vw, 1.6rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.012em; color: #1B4041; text-wrap: balance; } .ds-card p { margin: 0; color: #3C5257; font-size: 0.975rem; line-height: 1.65; }"
+    },
+    {
+      "name": "Card Clicável",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "O card inteiro é o link; a seta é o sinal de destino em repouso, não só no hover.",
+      "html": "<a class=\"ds-card-link\" href=\"#\"><h2>Esportes</h2><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 5l7 7-7 7\"/></svg></a>",
+      "css": ".ds-card-link { display: flex; align-items: center; justify-content: space-between; gap: 1rem; background: #FFFFFF; border: 1px solid #DCD5CB; border-radius: 12px; padding: 1.5rem; text-decoration: none; color: inherit; transition: border-color 0.15s ease, background-color 0.15s ease; } .ds-card-link h2 { margin: 0; font-size: clamp(1.25rem, 1.12rem + 0.6vw, 1.6rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.012em; color: #1B4041; } .ds-card-link svg { width: 20px; height: 20px; flex: 0 0 auto; color: #A8332F; transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1); } .ds-card-link:hover, .ds-card-link:focus-visible { border-color: #ED6965; background: #FFFFFF; } .ds-card-link:hover svg, .ds-card-link:focus-visible svg { transform: translateX(4px); } .ds-card-link:hover h2 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.18em; text-decoration-color: #ED6965; } .ds-card-link:focus-visible { outline: 3px solid #A8332F; outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-card-link svg { transition: none; } .ds-card-link:hover svg { transform: none; } }"
+    },
+    {
+      "name": "Etiqueta de Contagem",
+      "kind": "chip",
+      "refersTo": "card-tag",
+      "description": "Pílula branca com filete e numeral tabular; ancorada na base do card de modalidade.",
+      "html": "<span class=\"ds-tag\">150 participantes</span>",
+      "css": ".ds-tag { display: inline-block; background: #FFFFFF; border: 1px solid #DCD5CB; color: #1B4041; font-size: 0.875rem; font-weight: 700; font-variant-numeric: tabular-nums; padding: 0.2rem 0.7rem; border-radius: 999px; }"
+    },
+    {
+      "name": "Campo da Chave PIX",
+      "kind": "input",
+      "refersTo": "pix-key",
+      "description": "O único campo de dado do sistema e o momento memorável: o botão confirma de volta com 'Copiado!'.",
+      "html": "<div class=\"ds-pix\"><code class=\"ds-pix-key\">SUBSTITUIR_PELA_CHAVE_PIX_OFICIAL</code><button type=\"button\" class=\"ds-copy-btn\">Copiar chave</button></div>",
+      "css": ".ds-pix { display: flex; gap: 0.5rem; align-items: center; background: #FAF7F2; border: 1px solid #BDB4A7; border-radius: 6px; padding: 1rem; } .ds-pix-key { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.95rem; color: #22303C; word-break: break-all; } .ds-copy-btn { border: 1px solid #2C6B6D; background: #2C6B6D; color: #FFFFFF; border-radius: 999px; padding: 0.6rem 1.25rem; font-size: 1rem; font-weight: 700; cursor: pointer; flex-shrink: 0; transition: background-color 0.15s ease, border-color 0.15s ease; } .ds-copy-btn:hover { background: #1B4041; border-color: #1B4041; } .ds-copy-btn:focus-visible { outline: 3px solid #A8332F; outline-offset: 3px; }"
+    },
+    {
+      "name": "Faixa de Números",
+      "kind": "custom",
+      "refersTo": "stat-band",
+      "description": "Campo teal escuro de largura total com numeral tabular. Estática por decisão: movimento perpétuo em dado institucional lê como enfeite.",
+      "html": "<div class=\"ds-stat-band\"><div class=\"ds-stat\"><span class=\"ds-stat-number\">450+</span><span class=\"ds-stat-label\">crianças e adolescentes acompanhados</span></div><div class=\"ds-stat\"><span class=\"ds-stat-number\">2010</span><span class=\"ds-stat-label\">ano de fundação</span></div></div>",
+      "css": ".ds-stat-band { background: #1B4041; color: #FFFFFF; padding: clamp(2rem, 4vw, 3rem) 1.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } .ds-stat { text-align: center; padding: 0 0.5rem; border-left: 1px solid rgba(255,255,255,0.16); } .ds-stat:first-child { border-left: 0; } .ds-stat-number { display: block; font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 800; line-height: 1; letter-spacing: -0.035em; font-variant-numeric: tabular-nums; margin-bottom: 0.55rem; } .ds-stat-label { display: block; max-width: 22ch; margin: 0 auto; font-size: 0.875rem; line-height: 1.4; color: #B7D2D2; text-wrap: balance; }"
+    },
+    {
+      "name": "Painel de CTA",
+      "kind": "custom",
+      "refersTo": "cta-panel",
+      "description": "Campo teal lavado com raio de 20px; o mesmo campo em qualquer seção, para nunca sumir contra o fundo.",
+      "html": "<div class=\"ds-cta\"><h2>Quer conhecer de perto o nosso trabalho?</h2><p>Fale com a equipe pelos nossos canais diretos.</p><a class=\"ds-btn ds-btn-primary\" href=\"#\">Quero doar</a></div>",
+      "css": ".ds-cta { background: #E4F2F2; border: 1px solid #C4E0E0; border-radius: 20px; padding: clamp(2rem, 5vw, 3.5rem) 1.5rem; text-align: center; } .ds-cta h2 { margin: 0 auto 1rem; max-width: 22ch; font-size: clamp(1.6rem, 1.3rem + 1.5vw, 2.6rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.022em; color: #22303C; text-wrap: balance; } .ds-cta p { color: #3C5257; font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem); max-width: 50ch; margin: 0 auto 2.5rem; } .ds-btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.9rem 1.75rem; border-radius: 999px; font-size: 1.0625rem; font-weight: 800; text-decoration: none; border: 2px solid transparent; } .ds-btn-primary { background: #ED6965; border-color: #D8524E; color: #1D2A34; } .ds-btn-primary:hover { background: #F07D79; }"
+    },
+    {
+      "name": "Pílula do WhatsApp",
+      "kind": "custom",
+      "refersTo": "whatsapp-pill",
+      "description": "Único elemento permanentemente fora do fluxo, e um dos dois usos legítimos de sombra.",
+      "html": "<a class=\"ds-wa\" href=\"#\">Fale no WhatsApp</a>",
+      "css": ".ds-wa { display: inline-flex; align-items: center; gap: 0.5rem; background: #0F7A40; color: #FFFFFF; border-radius: 999px; padding: 0.8rem 1.25rem; font-weight: 700; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 10px rgba(16,16,16,0.12), 0 14px 34px rgba(16,16,16,0.16); } .ds-wa:hover { background: #0C6534; color: #FFFFFF; } .ds-wa:focus-visible { outline: 3px solid #A8332F; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Convenção, Executada",
+    "overview": "O site adota, por decisão permanente registrada em PRODUCT.md, a arquitetura convencional de uma página de doação de ONG — herói com texto à esquerda e fotografia à direita, faixa de números, grade de cards, CTA, rodapé escuro. O que distingue este sistema não é o arranjo: é o acabamento. Cada valor de cor vem amostrado por pixel da logo existente, cada passo de tipo tem salto real, cada limite de componente tem contraste medido. A convenção é a escolha; a execução é a propriedade da superfície.\n\nA densidade é institucional e tranquila: campos grandes de cor sólida, filetes finos, medida de leitura travada, respiro vertical fluido (56–104px). A profundidade vem de sobreposição de campos chapados — creme como chão da página, branco como campo elevado, teal escuro como âncora. Não há gradiente em nenhum lugar do sistema, não há vidro, não há sombra colorida. Duas sombras existem e são reservadas ao que está de fato flutuando acima da página.\n\nA voz tipográfica é a pilha de fontes do sistema operacional. Isto é limitação declarada, não preferência: PRODUCT.md fixa zero requisições a terceiros e não existe arquivo de fonte auto-hospedado no repositório. A compensação foi feita na métrica — peso 800 no topo, tracking negativo, escala que chega a 64/41/25px com salto real entre níveis, text-wrap: balance e medida presa em 65ch.",
+    "keyCharacteristics": [
+      "Cor por cargo fixo, nunca por decoração: coral é ação e só ação.",
+      "Campos chapados e sobrepostos; zero gradiente, zero sombra tintada.",
+      "Escala tipográfica fluida de sistema, com salto real entre níveis.",
+      "Contraste medido como requisito vinculante (WCAG 2.1 AA), inclusive em limite de componente (1.4.11).",
+      "Um único momento de movimento autorado, a partir de um estado já visível.",
+      "Superfícies do navegador (seleção, caret, scrollbar, foco) tematizadas de propósito."
+    ],
+    "rules": [
+      { "name": "The Fixed Post Rule", "body": "Toda cor tem um cargo e só um: coral é ação, teal escuro é âncora de superfície, teal médio é ligação, creme é chão, branco é campo elevado. Cor nunca é escolhida por gosto no ponto de uso.", "section": "colors" },
+      { "name": "The One Coral Target Rule", "body": "Um alvo coral dominante por viewport. O CTA do menu é coral por compromisso de marca, mas fica subordinado em tamanho e peso ao botão do herói; a ação de segunda ordem recua para contorno.", "section": "colors" },
+      { "name": "The Measured Ink Rule", "body": "Nenhum par texto/fundo entra no sistema sem medição contra 4.5:1 (texto normal) e 3:1 (texto grande ou limite de componente). Contraste vence marca — inclusive marca de terceiro, como o verde do WhatsApp ajustado para #0F7A40.", "section": "colors" },
+      { "name": "The Document-Level Split Rule", "body": "Nível de documento e escala visual são coisas diferentes, e a divergência aqui é deliberada: títulos de card e de caixa de doação são h2 por semântica WCAG 1.3.1 e renderizam na escala de título via .card h2 / .donate-box h2; títulos de rodapé são h2 renderizando o tratamento caixa-alta do antigo h4 via .footer-grid h2; as seções numeradas de privacidade.html são h2 na escala de seção via .container-narrow > h2. Quem editar precisa saber que a compensação existe, ou vai \"consertar\" de volta.", "section": "typography" },
+      { "name": "The Locked Measure Rule", "body": "Texto corrido nunca passa de 65ch (68ch em .measure-wide). A medida pertence ao parágrafo, não ao bloco — presa no bloco, o título deixa de respirar.", "section": "typography" },
+      { "name": "The Air Above Rule", "body": "Mais espaço acima de um título do que abaixo dele (* + h2 = 4rem, * + h3 = 2.5rem).", "section": "typography" },
+      { "name": "The Flat Field Rule", "body": "Superfície nova = campo chapado com filete, não sombra. Sombra só para elemento que sai do fluxo do documento (posicionado absolute ou fixed).", "section": "elevation" },
+      { "name": "The Neutral Shadow Rule", "body": "Sombra é neutra e nunca tintada de marca. Sem gradiente, sem vidro, sem sombra colorida, sem deslocamento duro sem desfoque.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do atribuir cor por cargo: coral para ação, teal escuro para campo-âncora, teal médio para ligação, creme como chão, branco como campo elevado.",
+      "Do usar --on-coral para qualquer texto sobre coral e --color-control-border para qualquer limite de componente — os dois existem para satisfazer 4.5:1 e 1.4.11 e não são substituíveis por ink ou cinza neutro.",
+      "Do criar profundidade por campo chapado sobreposto com filete de 1px.",
+      "Do travar texto corrido em 65ch e manter text-wrap: balance nos títulos.",
+      "Do manter numeral tabular em qualquer dado numérico alinhado em coluna.",
+      "Do desenhar ícones como SVG inline com traço de 2.5px e currentColor.",
+      "Do guardar qualquer movimento com prefers-reduced-motion e partir de um estado já visível, nunca de opacity: 0 dependente de animação.",
+      "Do replicar à mão qualquer mudança de header ou rodapé nos treze arquivos HTML — a duplicação é decisão registrada, não descuido.",
+      "Do manter todo estilo em css/style.css: a CSP sem 'unsafe-inline' bloqueia style= e <script> inline em produção."
+    ],
+    "donts": [
+      "Don't usar gradiente em nenhum lugar — nem lavado, nem sutil, nem em overlay de foto.",
+      "Don't tintar sombra com cor de marca, nem usar sombra sem desfoque; sombra existe só para o que sai do fluxo (seta do carrossel, pílula do WhatsApp).",
+      "Don't colocar coral em superfície decorativa, nem pôr dois alvos coral de mesmo peso no mesmo viewport.",
+      "Don't usar texto branco sobre coral ou sobre teal claro — ambos reprovam AA.",
+      "Don't \"corrigir\" os h2 que renderizam em escala de título ou em caixa alta: a divergência entre nível de documento e escala visual é deliberada e está documentada.",
+      "Don't reintroduzir movimento perpétuo (marquee, auto-scroll de números) nem pedir fonte a terceiro — as duas travas são de produto.",
+      "Don't reabrir a escolha da convenção de categoria nem contrabandear excentricidade autoral por dentro dela."
+    ]
+  }
+}
