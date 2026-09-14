@@ -24,6 +24,13 @@ jobs:
       # um navegador de verdade: manter esses dois aqui geraria alarme falso
       # toda semana. Confira os dois a mao quando mexer no rodape.
       # 429 e aceito porque rate limit nao e link quebrado.
+      #
+      # academiaperolasnegras.org (excluido em setembro de 2026): o certificado
+      # e valido, mas o servidor do parceiro envia so o certificado final, sem
+      # o intermediario da ZeroSSL ("Verify return code: 21"). Navegadores
+      # buscam o intermediario sozinhos e abrem o site normalmente; o lychee
+      # nao busca e falharia toda semana. O conserto e do lado deles: instalar
+      # a cadeia completa (fullchain). Remover esta exclusao quando corrigirem.
       - name: lychee
         uses: lycheeverse/lychee-action@v2
         with:
@@ -34,5 +41,6 @@ jobs:
             --accept 200..=299,429
             --exclude '^https://www\.instagram\.com/'
             --exclude '^https://wa\.me/'
+            --exclude '^https://academiaperolasnegras\.org'
             *.html content/parceiros.json
           fail: true
