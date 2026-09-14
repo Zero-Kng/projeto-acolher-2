@@ -162,9 +162,152 @@
     });
   }
 
+  // ---------------------------------------------------------------------
+  // Galeria das paginas de atividade (grade quadrada, formato de perfil)
+  // ---------------------------------------------------------------------
+
+  function icone(d) {
+    var NS = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+    svg.setAttribute("fill", "none");
+    svg.setAttribute("stroke", "currentColor");
+    svg.setAttribute("stroke-width", "2.2");
+    svg.setAttribute("stroke-linecap", "round");
+    svg.setAttribute("stroke-linejoin", "round");
+    var path = document.createElementNS(NS, "path");
+    path.setAttribute("d", d);
+    svg.appendChild(path);
+    return svg;
+  }
+
+  function botao(classe, rotulo, d, aoClicar) {
+    var b = el("button", "lightbox-btn " + classe);
+    b.type = "button";
+    b.setAttribute("aria-label", rotulo);
+    b.appendChild(icone(d));
+    b.addEventListener("click", aoClicar);
+    return b;
+  }
+
+  // Monta a ampliacao uma unica vez, sob demanda, e a reaproveita.
+  function criarAmpliacao(fotos) {
+    var indice = 0;
+    var origem = null;
+
+    var caixa = el("div", "lightbox");
+    caixa.setAttribute("role", "dialog");
+    caixa.setAttribute("aria-modal", "true");
+    caixa.setAttribute("aria-label", "Foto ampliada");
+    caixa.hidden = true;
+
+    var contador = el("p", "lightbox-contador");
+    var figura = document.createElement("figure");
+    var img = document.createElement("img");
+    var legenda = document.createElement("figcaption");
+    figura.appendChild(img);
+    figura.appendChild(legenda);
+
+    function mostrar(i) {
+      indice = (i + fotos.length) % fotos.length;
+      var f = fotos[indice];
+      img.src = f.src;
+      img.alt = f.alt || "";
+      legenda.textContent = f.alt || "";
+      contador.textContent = (indice + 1) + " de " + fotos.length;
+    }
+
+    function fechar() {
+      caixa.hidden = true;
+      document.body.style.removeProperty("overflow");
+      if (origem) origem.focus();
+    }
+
+    var fechaBtn = botao("lightbox-close", "Fechar foto ampliada", "M6 6l12 12M18 6L6 18", fechar);
+    var prevBtn = botao("lightbox-prev", "Foto anterior", "M15 5l-7 7 7 7", function () { mostrar(indice - 1); });
+    var nextBtn = botao("lightbox-next", "Próxima foto", "M9 5l7 7-7 7", function () { mostrar(indice + 1); });
+
+    caixa.appendChild(contador);
+    caixa.appendChild(fechaBtn);
+    if (fotos.length > 1) {
+      caixa.appendChild(prevBtn);
+      caixa.appendChild(nextBtn);
+    }
+    caixa.appendChild(figura);
+
+    // Clique no fundo fecha; clique na propria foto, nao.
+    caixa.addEventListener("click", function (e) {
+      if (e.target === caixa) fechar();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (caixa.hidden) return;
+      if (e.key === "Escape") fechar();
+      if (fotos.length > 1 && e.key === "ArrowLeft") mostrar(indice - 1);
+      if (fotos.length > 1 && e.key === "ArrowRight") mostrar(indice + 1);
+    });
+
+    document.body.appendChild(caixa);
+
+    return function abrir(i, gatilho) {
+      origem = gatilho || null;
+      mostrar(i);
+      caixa.hidden = false;
+      document.body.style.setProperty("overflow", "hidden");
+      fechaBtn.focus();
+    };
+  }
+
+  function renderGalerias() {
+    var grade = document.querySelector("[data-galeria]");
+    if (!grade) return;
+    var secao = grade.getAttribute("data-galeria");
+    var bloco = grade.closest("[data-galeria-secao]");
+
+    fetchJSON("content/galerias.json").then(function (data) {
+      var fotos = (data[secao] || []).filter(function (f) { return f && f.src; });
+      if (!fotos.length) return; // secao continua oculta: melhor que uma grade vazia
+
+      var abrir = criarAmpliacao(fotos);
+      grade.innerHTML = "";
+
+      fotos.forEach(function (foto, i) {
+        var item = el("li");
+        var link = el("a", "gallery-item");
+        link.href = foto.src;
+        link.setAttribute("aria-label", "Ampliar foto: " + (foto.alt || "foto " + (i + 1)));
+        var img = document.createElement("img");
+        img.src = foto.src;
+        img.alt = foto.alt || "";
+        img.loading = i < 6 ? "eager" : "lazy";
+        img.decoding = "async";
+        link.appendChild(img);
+        // Sem JavaScript o link abre a foto direto; com JavaScript, amplia.
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          abrir(i, link);
+        });
+        item.appendChild(link);
+        grade.appendChild(item);
+      });
+
+      if (bloco) bloco.hidden = false;
+    }).catch(function (err) {
+      // A secao continua oculta para o visitante — melhor que uma grade vazia.
+      // Mas o erro vai para o console: um catch mudo esconde defeito de codigo
+      // tao bem quanto esconde falha de rede.
+      if (window.console && console.error) {
+        console.error("Galeria \"" + secao + "\" nao pode ser montada:", err);
+      }
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     renderPartners();
     renderDonation();
     renderGallery();
+    renderGalerias();
   });
 })();

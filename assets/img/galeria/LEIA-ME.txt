@@ -1,0 +1,93 @@
+GALERIAS DE FOTOS DAS ATIVIDADES
+================================
+
+Cada pasta aqui dentro corresponde a uma pagina do site:
+
+  esportes/      -> pagina Esportes
+  educacao/      -> pagina Educacao e Cultura
+  convivencia/   -> pagina Convivencia e Atendimento Familiar
+
+
+ANTES DE ENVIAR QUALQUER FOTO
+-----------------------------
+
+Estas duas regras sao da propria Associacao e estao registradas no PRODUCT.md.
+Nao sao formalidade:
+
+1. TERMO DE AUTORIZACAO DE USO DE IMAGEM assinado pelo responsavel legal de
+   toda crianca ou adolescente que apareca identificavel na foto. Sem o termo
+   assinado, a foto nao vai para o site.
+
+2. METADADOS REMOVIDOS. Fotos de celular gravam a localizacao GPS dentro do
+   arquivo. Publicar isso expoe o endereco de uma comunidade vulneravel.
+   Antes de enviar, remova os metadados:
+
+   - Windows: clique direito no arquivo > Propriedades > Detalhes >
+     "Remover propriedades e informacoes pessoais" > criar uma copia limpa.
+   - iPhone: ao compartilhar, toque em "Opcoes" e desligue "Dados de local".
+   - Android (Google Fotos): compartilhar > desligar "Remover dados de local"
+     (confira o texto, o rotulo muda entre versoes).
+
+   Na duvida, envie assim mesmo e avise: da para limpar aqui antes de publicar.
+
+
+COMO ADICIONAR UMA FOTO
+-----------------------
+
+Passo 1. Coloque o arquivo na pasta da atividade correspondente.
+
+   Formato:  JPG
+   Tamanho:  1200x1200 pixels ja cortada em quadrado e o ideal.
+             A galeria mostra tudo em quadrado; se a foto for retangular,
+             o site corta pelo centro e algo pode ficar de fora.
+   Peso:     de preferencia abaixo de 400 KB por foto. O site nao tem
+             processamento de imagem no servidor: o que for enviado e o que
+             o visitante baixa.
+   Nome:     sem espacos, sem acentos, tudo minusculo.
+             Bom:  ginastica-apresentacao-2025.jpg
+             Ruim: Foto Ginástica (1).JPG
+
+Passo 2. Abra content/galerias.json e acrescente uma linha na atividade certa.
+
+   Cada foto precisa de duas coisas:
+
+     "src" = o caminho do arquivo
+     "alt" = uma descricao curta do que aparece na foto
+
+   O "alt" nao e opcional. E o que uma pessoa cega ouve no lugar da imagem, e
+   e o que aparece se a foto nao carregar. Descreva a cena, nao o arquivo:
+
+     Bom:  "Meninas do Projeto Acolher em apresentacao de ginastica artistica."
+     Ruim: "foto 3" / "IMG_20250412" / "criancas"
+
+   Evite nomear criancas no alt.
+
+Exemplo de como fica o arquivo com duas fotos em Esportes:
+
+{
+  "esportes": [
+    { "src": "assets/img/galeria/esportes/treino-futebol.jpg", "alt": "Grupo de meninos em treino de futebol na quadra." },
+    { "src": "assets/img/galeria/esportes/aula-judo.jpg",      "alt": "Crianças de quimono durante aula de judo." }
+  ],
+  "educacao": [],
+  "convivencia": []
+}
+
+Cuidado com a virgula: ela separa uma foto da outra, mas NAO pode aparecer
+depois da ultima de cada lista. Uma virgula sobrando derruba a galeria inteira.
+
+
+SE ALGO DER ERRADO
+------------------
+
+A galeria so aparece no site quando ha pelo menos uma foto na lista. Se a
+lista estiver vazia, a secao inteira some da pagina em vez de mostrar um
+espaco vazio.
+
+O CI do projeto confere automaticamente, a cada envio:
+  - se o JSON esta valido (virgula sobrando, aspas faltando)
+  - se cada arquivo citado no JSON realmente existe na pasta
+  - se toda foto tem "alt" preenchido
+
+Ou seja: se voce citar uma foto no JSON e esquecer de enviar o arquivo, o
+projeto acusa o erro antes de ir para o ar.

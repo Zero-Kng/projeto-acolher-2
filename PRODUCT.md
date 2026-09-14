@@ -10,7 +10,7 @@ web
 
 **Público prioritário confirmado: doador pessoa física.** Alguém que chega ao site sem conhecer a organização — por indicação, por busca, por link no Instagram — e precisa decidir, em poucos segundos, se essa é uma instituição real e séria o bastante para receber seu dinheiro. O trabalho dele é simples de nomear e difícil de merecer: confiar e doar. É por isso que "Doar agora" é o único item destacado no menu.
 
-**Beneficiários — não são os visitantes do site.** Crianças e adolescentes de 4 a 17 anos das comunidades Pavão-Pavãozinho e Cantagalo, na zona sul do Rio de Janeiro. Eles são a razão do trabalho, aparecem nas fotos e nos números, mas não são quem o site precisa converter. Não confundir os dois.
+**Beneficiários — não são os visitantes do site.** Crianças e adolescentes de 3 a 17 anos das comunidades Pavão-Pavãozinho e Cantagalo, na zona sul do Rio de Janeiro. Eles são a razão do trabalho, aparecem nas fotos e nos números, mas não são quem o site precisa converter. Não confundir os dois.
 
 **Outros públicos, atendidos em segundo plano** (cada um já tem página própria, e nenhum deve ser sacrificado pela prioridade do doador):
 
@@ -36,7 +36,7 @@ O que um projeto social vizinho não poderia copiar honestamente:
 
 - **Quinze anos de continuidade, com origem rastreável.** Nasceu do trabalho da Pastoral da Criança e opera desde 2010, quando atendia crianças de 0 a 6 anos da comunidade do Caranguejo, no Morro Pavão-Pavãozinho. Ampliou a faixa etária conforme os beneficiários cresceram e, em 2017, chegou ao Cantagalo com escolinhas esportivas. A trajetória é a prova — não é um projeto que começou ontem.
 - **Território específico, não genérico.** Duas comunidades nomeadas, não "comunidades do Rio".
-- **O esporte como porta de entrada, não como fim.** Sete modalidades levam a reforço escolar, cultura, convivência e acompanhamento das famílias. A criança entra pelo futebol e a família inteira passa a ser acompanhada.
+- **O esporte como porta de entrada, não como fim.** Seis modalidades levam a reforço escolar, cultura, convivência e acompanhamento das famílias. A criança entra pelo futebol e a família inteira passa a ser acompanhada.
 - **Acompanhamento que atravessa a infância.** Os mesmos beneficiários são seguidos da primeira infância à adolescência, com o vínculo familiar tratado como parte do trabalho.
 
 ## Operating Context
@@ -52,9 +52,10 @@ O que um projeto social vizinho não poderia copiar honestamente:
 
 **O que o site faz**
 
-- Sete páginas institucionais mais o hub de Atividades com cinco páginas filhas (Esportes, Educação e Reforço Escolar, Cultura/Arte/Lazer, Serviço de Convivência e Fortalecimento de Vínculos, Atendimento às Famílias).
+- Sete páginas institucionais mais o hub de Atividades com três páginas filhas: Esportes, Educação e Cultura, e Convivência e Atendimento Familiar. As páginas de Cultura e de Famílias foram consolidadas nessas duas, com redirecionamento 301 das URLs antigas no `.htaccess`.
 - Doação por PIX com botão de copiar chave; link de pagamento por cartão ou recorrente previsto.
 - Listas de parceiros e galeria carregadas de JSON.
+- **Galeria de fotos em cada página de atividade**, em grade quadrada de três colunas no formato de perfil de rede social, com ampliação por clique (teclado e foco tratados). Alimentada por `content/galerias.json`, uma lista por página; a seção inteira fica oculta enquanto a lista estiver vazia, em vez de exibir uma grade vazia. As fotos ficam em `assets/img/galeria/<página>/` e continuam sujeitas às duas regras da associação: termo de autorização de imagem assinado e metadados EXIF/GPS removidos.
 - Contato por WhatsApp, e-mail e Instagram. Voluntariado por esses canais mais um formulário externo do Google Forms.
 
 **Restrições técnicas duras**
@@ -70,7 +71,8 @@ O que um projeto social vizinho não poderia copiar honestamente:
 - Link do Mercado Pago: não configurado.
 - Logo em 150×150px — borra acima desse tamanho. Substituir por SVG ou PNG de 500px+.
 - Política de Privacidade: modelo baseado em LGPD/ECA, ainda **não revisado por advogado**.
-- Hierarquia de títulos pula nível em cards e rodapé (falha real de WCAG 1.3.1, hoje como aviso no CI, com caminho de correção já documentado no README).
+- ~~Hierarquia de títulos pulando nível~~ — **corrigida**. Títulos de card e de rodapé foram promovidos com compensação no CSS, e a regra `heading-level` passou de aviso a **erro** no `.htmlvalidate.json`, de modo que o CI barra reincidência.
+- `<title>` da home com 91 caracteres (limite recomendado: 70). Encurtar é decisão de SEO/conteúdo da equipe.
 
 ## Brand Commitments
 
@@ -87,11 +89,16 @@ O que um projeto social vizinho não poderia copiar honestamente:
 
 **Existe e está no repositório**
 
-- **5 fotos reais** das atividades, com consentimento confirmado, EXIF/GPS verificado (nenhum encontrado) e imagem resalva do zero para garantir que nenhum metadado residual foi publicado. Em `assets/img/`, catalogadas com texto alternativo em `content/galeria.json`.
+- **5 fotos reais** no carrossel da home, com consentimento confirmado, EXIF/GPS verificado e imagem resalva do zero. Em `assets/img/`, catalogadas em `content/galeria.json`.
+- **201 fotos nas galerias das atividades** enviadas pela equipe em setembro de 2026: 71 em Esportes, 111 em Educação e Cultura, 19 em Convivência. Todas processadas antes de publicar — 94 arquivos HEIC convertidos para JPG, 13 duplicatas descartadas, **2 arquivos tinham coordenada GPS embutida e foram limpos**, e todas as 201 saíram com zero metadado. Cada uma tem texto alternativo escrito individualmente, descrevendo a cena sem nomear crianças. Em `assets/img/galeria/<página>/`, catalogadas em `content/galerias.json`.
+- **Pendência de autorização de imagem:** cerca de 45 fotos da galeria de Educação e Cultura são retratos individuais aproximados, de crianças plenamente identificáveis — situação bem mais exposta que as fotos de grupo em atividade. A regra da associação exige termo assinado pelo responsável legal para cada uma. Confirmar antes de publicar.
 - **8 parceiros com URL confirmada:** Departamento de Comunicação da PUC-Rio, UNIFACHA, Bar do Adão, ALOB Sports, Academia Pérolas Negras, Viva Rio, Axx Care, Clube de Regatas do Flamengo. Hoje aparecem só como nome e link — não há descrição do que cada parceria envolve, nem logotipos.
 - **Contato institucional:** `contato@acolhendo.org.br`, WhatsApp +55 (21) 99596-9795, Instagram @aprojetoacolher.
-- **Números de impacto publicados:** 450+ crianças e adolescentes acompanhados, fundação em 2010, 8 modalidades esportivas, 2 comunidades. Registro de divergência: o site antigo em `acolhendo.org.br` informava "mais de 30" e o handoff marcou o número como pendente de confirmação oficial; o valor 450+ foi depois confirmado como oficial. A soma dos participantes declarados por modalidade é 445.
-- **7 modalidades com número de participantes:** Ginástica Artística (130), Ginástica Baby (20), Futebol (150), Judô (75), Vôlei (20), Basquete (20), EducaFut (30).
+- **Números de impacto publicados:** 450+ crianças e adolescentes acompanhados, fundação em 2010, 8 modalidades esportivas, 2 comunidades. Registro de divergência: o site antigo em `acolhendo.org.br` informava "mais de 30" e o handoff marcou o número como pendente de confirmação oficial; o valor 450+ foi depois confirmado como oficial. A home anuncia 8 modalidades esportivas enquanto o texto oficial mais recente documenta 6; a equipe optou por manter o número por enquanto, então ele segue pendente de confirmação.
+- **6 modalidades esportivas, por vagas e faixa etária:** Ginástica Artística (130 vagas, 5 a 14 anos), Ginástica Baby (20, 3 a 5), Futebol (150, 5 a 17), Judô (75, 6 a 17), Vôlei (20, a partir de 11), Basquete (20, a partir de 8). Soma: 415 vagas. A unidade declarada é **vaga**, capacidade de atendimento, não matrícula efetivada.
+- **Fora do esporte:** Reforço Escolar (30 vagas, 7 a 16 anos) e SCFV Acolher (30 vagas, 7 a 16 anos). EducaFut, Entre Mães e Projeto Travessia não têm número de vagas declarado.
+- **Programas não publicados antes:** Entre Mães (mulheres do Pavão-Pavãozinho e Cantagalo responsáveis por participantes) e Projeto Travessia (em parceria com o VRB). O EducaFut deixou de ser modalidade esportiva e passou a ser ação de educação, em parceria com a Academia de Futebol Pérolas Negras.
+- **Pendência de nomenclatura:** "VRB" aparece no texto oficial sem expansão. Confirmar o nome completo antes de publicar.
 
 **Existe na organização, mas ainda NÃO está no repositório**
 

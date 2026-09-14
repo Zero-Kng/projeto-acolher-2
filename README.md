@@ -19,12 +19,10 @@ A estrutura de páginas e a arquitetura de conteúdo foram alinhadas com o rascu
 
 ```
 index.html          Home (hero com carrossel de fotos, estatísticas, história, missão/visão/valores, CTA)
-atividades.html      Hub das atividades — 5 cards clicáveis que levam às páginas abaixo
-atividades-esportes.html      Esportes
-atividades-educacao.html      Educação e Reforço Escolar
-atividades-cultura.html       Cultura, Arte e Lazer
-atividades-convivencia.html   Serviço de Convivência e Fortalecimento de Vínculos
-atividades-familias.html      Atendimento às Famílias
+atividades.html      Hub das atividades — 3 cards clicáveis que levam às páginas abaixo
+atividades-esportes.html      Esportes (6 modalidades, com vagas e faixa etária)
+atividades-educacao.html      Educação e Cultura (EducaFut, Reforço Escolar)
+atividades-convivencia.html   Convivência e Atendimento Familiar (SCFV Acolher, Entre Mães, Projeto Travessia)
 parceiros.html       Lista de parceiros (carregada de content/parceiros.json)
 voluntariado.html    Como ser voluntário(a) — canais diretos, sem formulário
 doe.html              Doação via PIX / Mercado Pago (ver pendência abaixo) + transparência
@@ -36,6 +34,9 @@ js/main.js            Menu mobile + botão "copiar chave PIX"
 js/content.js          Busca e renderiza parceiros/galeria/doação a partir dos JSONs (DOM API, nunca innerHTML com dado não confiável — evita XSS)
 content/*.json         Dados editáveis direto no arquivo, sem precisar de painel
 assets/img/            Logo e fotos
+assets/img/galeria/    Galerias das páginas de atividade, uma pasta por página.
+                       Ver assets/img/galeria/LEIA-ME.txt: regras de uso de imagem,
+                       remoção de EXIF e como cadastrar a foto em content/galerias.json
 .htaccess               Cabeçalhos de segurança + HTTPS forçado + página 404 customizada (equivalente ao netlify.toml do rascunho, adaptado pra Apache)
 robots.txt, sitemap.xml
 ```

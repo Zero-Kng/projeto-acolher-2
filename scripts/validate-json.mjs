@@ -22,6 +22,24 @@ const esquemas = {
     }
     return null;
   },
+  // Uma lista por pagina de atividade. A equipe edita este arquivo por FTP
+  // depois de subir a foto, entao vale checar as duas pontas: que o arquivo
+  // citado existe mesmo na pasta e que ninguem esqueceu o texto alternativo.
+  "galerias.json": (data) => {
+    const secoes = ["esportes", "educacao", "convivencia"];
+    for (const secao of secoes) {
+      if (!Array.isArray(data[secao])) return `esperado um array em "${secao}"`;
+      for (const [i, p] of data[secao].entries()) {
+        if (!p.src) return `${secao}[${i}] sem "src"`;
+        if (!existsSync(p.src)) return `${secao}[${i}].src aponta para arquivo inexistente: ${p.src}`;
+        if (!p.alt) return `${secao}[${i}] sem "alt" (obrigatorio para acessibilidade)`;
+      }
+    }
+    for (const chave of Object.keys(data)) {
+      if (!secoes.includes(chave)) return `secao desconhecida "${chave}" (esperado: ${secoes.join(", ")})`;
+    }
+    return null;
+  },
   "parceiros.json": (data) => {
     if (!Array.isArray(data.partners)) return 'esperado um array em "partners"';
     for (const [i, p] of data.partners.entries()) {

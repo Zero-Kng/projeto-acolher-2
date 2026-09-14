@@ -1,0 +1,812 @@
+{
+  "esportes": [
+    {
+      "src": "assets/img/galeria/esportes/futsal-01.jpg",
+      "alt": "Crianças com camisas do projeto reunidas em quadra coberta, ao lado de caixas de material esportivo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-01.jpg",
+      "alt": "Turma de ginástica artística perfilada no tatame, de collant vermelho do projeto."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-01.jpg",
+      "alt": "Judocas com medalhas ao lado do professor depois da competição."
+    },
+    {
+      "src": "assets/img/galeria/esportes/volei-basquete-01.jpg",
+      "alt": "Partida de vôlei em quadra ao ar livre no fim da tarde, com a rede montada."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-02.jpg",
+      "alt": "Time de futebol infantil posando em campo de grama sintética, de uniforme amarelo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-02.jpg",
+      "alt": "Ginasta sorrindo deitada no colchão durante o treino, com as colegas ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-02.jpg",
+      "alt": "Duas judocas de quimono azul mostram suas medalhas ao ar livre."
+    },
+    {
+      "src": "assets/img/galeria/esportes/volei-basquete-02.jpg",
+      "alt": "Treino de basquete em quadra ao ar livre, com o mar ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-03.jpg",
+      "alt": "Grupo de crianças de colete amarelo reunido em campo de grama sintética depois do treino."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-03.jpg",
+      "alt": "Turma de ginástica artística posando em pé sobre o tatame azul."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-03.jpg",
+      "alt": "Equipe de judô reunida com as medalhas conquistadas."
+    },
+    {
+      "src": "assets/img/galeria/esportes/volei-basquete-03.jpg",
+      "alt": "Jogadoras de vôlei em quadra da comunidade, esperando o saque."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-04.jpg",
+      "alt": "Menino de colete amarelo com medalha no pescoço ao lado de um educador, os dois sorrindo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-04.jpg",
+      "alt": "Ginasta em exercício de flexibilidade junto à barra, com a perna estendida para cima."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-04.jpg",
+      "alt": "Equipe de judô posando com o professor no tatame do ginásio."
+    },
+    {
+      "src": "assets/img/galeria/esportes/volei-basquete-04.jpg",
+      "alt": "Partida de vôlei em quadra ao ar livre, com as casas do morro ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-05.jpg",
+      "alt": "Educador agachado ao lado de um menino medalhista, ambos com o polegar erguido."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-05.jpg",
+      "alt": "Ginasta de braços erguidos em apresentação no palco, com as colegas ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-05.jpg",
+      "alt": "Judocas no pódio de premiação, com a bandeira da equipe ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/volei-basquete-05.jpg",
+      "alt": "Jogadora se prepara para receber a bola durante o treino de vôlei."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-06.jpg",
+      "alt": "Turma de futsal de uniforme vermelho posando em quadra coberta junto dos educadores."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-06.jpg",
+      "alt": "Educadora acompanha uma ginasta durante exercício no tatame."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-06.jpg",
+      "alt": "Equipe de judô reunida no tatame depois da competição."
+    },
+    {
+      "src": "assets/img/galeria/esportes/volei-basquete-06.jpg",
+      "alt": "Treino em quadra coberta, com cones espalhados pelo chão."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-07.jpg",
+      "alt": "Crianças de uniforme vermelho em roda de aquecimento em quadra ao ar livre, com o mar ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-07.jpg",
+      "alt": "Grupo de ginastas sorrindo juntas, com mural colorido ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-07.jpg",
+      "alt": "Judocas e professor comemoram as medalhas no tatame."
+    },
+    {
+      "src": "assets/img/galeria/esportes/volei-basquete-07.jpg",
+      "alt": "Partida de vôlei em quadra coberta, com a rede montada ao centro."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-08.jpg",
+      "alt": "Treino em quadra ao ar livre, com muros grafitados e casas da comunidade ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-08.jpg",
+      "alt": "Ginasta em equilíbrio sobre a trave durante o ensaio, acompanhada pela educadora."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-08.jpg",
+      "alt": "Duas judocas de quimono azul com medalhas no pescoço, ao ar livre."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-09.jpg",
+      "alt": "Dois meninos de uniforme vermelho mostram juntos um desenho feito em sala."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-09.jpg",
+      "alt": "Turma de ginástica em apresentação no palco, todas com os braços erguidos."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-09.jpg",
+      "alt": "Judoca com medalha posando em frente à arquibancada."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-10.jpg",
+      "alt": "Crianças em treino de futebol em quadra de terra cercada por alambrado, na comunidade."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-10.jpg",
+      "alt": "Ginastas de braços erguidos durante apresentação, com painel colorido ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-10.jpg",
+      "alt": "Professor e judoca comemoram juntos depois da luta."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-11.jpg",
+      "alt": "Partida de futebol em quadra de terra, com as casas do morro ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-11.jpg",
+      "alt": "Crianças em atividade de desenho e pintura em volta da mesa, na sala do projeto."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-11.jpg",
+      "alt": "Equipe de judô com medalhas reunida no ginásio."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-12.jpg",
+      "alt": "Crianças em exercício de alongamento em campo de terra batida."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-12.jpg",
+      "alt": "Ginastas em exercício de ponte e apoio invertido sobre os colchões."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-12.jpg",
+      "alt": "Judocas exibem suas medalhas em ginásio de competição."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-13.jpg",
+      "alt": "Campo de terra com trave de gol e crianças treinando ao fundo, sob luz forte do fim de tarde."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-13.jpg",
+      "alt": "Ginastas deitadas em círculo com as mãos unidas ao centro, vistas de cima."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-13.jpg",
+      "alt": "Card do Projeto Acolher sobre a visita da judoca Rafaela Silva, com foto da turma de judô reunida no tatame."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-14.jpg",
+      "alt": "Grupo de crianças e adolescentes reunido ao ar livre, com vista da cidade ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-14.jpg",
+      "alt": "Turma de ginástica sentada no tatame durante o alongamento inicial."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-14.jpg",
+      "alt": "Card do Campeonato Meeting Amigos do Judô, com judocas do projeto exibindo suas medalhas."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-15.jpg",
+      "alt": "Participantes sentados em arquibancada de concreto durante o intervalo da atividade."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-15.jpg",
+      "alt": "Ginastas posando juntas com os braços erguidos na sala de treino."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-15.jpg",
+      "alt": "Card do Campeonato Meeting Amigos do Judô, com judocas e professor depois da premiação."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-16.jpg",
+      "alt": "Crianças e educadores em pátio ao ar livre, organizando o material antes do treino."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-16.jpg",
+      "alt": "Grupo de ginastas reunido para foto no tatame, algumas sentadas e outras em pé."
+    },
+    {
+      "src": "assets/img/galeria/esportes/judo-16.jpg",
+      "alt": "Card do Projeto Acolher sobre a visita do judoca Flávio Canto, com foto da turma reunida."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-17.jpg",
+      "alt": "Dois meninos sorrindo para a câmera durante atividade ao ar livre."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-17.jpg",
+      "alt": "Ginasta sorrindo sentada no chão da sala de treino depois do exercício."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-18.jpg",
+      "alt": "Turma de futebol posando em frente à trave, em quadra da comunidade."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-18.jpg",
+      "alt": "Turma de ginástica posando para foto com a educadora ao centro."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-19.jpg",
+      "alt": "Time infantil reunido em quadra de terra, com bolas e cones espalhados pelo chão."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-19.jpg",
+      "alt": "Duas ginastas deitadas no colchão durante exercício, vistas de cima."
+    },
+    {
+      "src": "assets/img/galeria/esportes/futsal-20.jpg",
+      "alt": "Menino de colete amarelo sentado na arquibancada, sorrindo com o polegar erguido."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-20.jpg",
+      "alt": "Ginastas em roda no colchão, conversando durante o treino."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-21.jpg",
+      "alt": "Ginasta saltando do trampolim na sala de treino."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-22.jpg",
+      "alt": "Ginasta caminhando sobre a trave enquanto as colegas acompanham sentadas."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-23.jpg",
+      "alt": "Ginastas alinhadas no colchão em exercício de alongamento."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-24.jpg",
+      "alt": "Ginastas reunidas em roda em volta de um cartaz escrito à mão."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-25.jpg",
+      "alt": "Turma de ginástica espalhada pelo tatame durante o treino."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-26.jpg",
+      "alt": "Ginastas em exercício de apoio invertido junto à barra."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-27.jpg",
+      "alt": "Ginastas deitadas no colchão formando um desenho em grupo, vistas de cima."
+    },
+    {
+      "src": "assets/img/galeria/esportes/ginastica-28.jpg",
+      "alt": "Ginasta sobre a trave com os braços erguidos, segurando um bloco de espuma."
+    }
+  ],
+  "educacao": [
+    {
+      "src": "assets/img/galeria/educacao/educativo-01.jpg",
+      "alt": "Crianças em atividade de artes em volta da mesa da sala."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-01.jpg",
+      "alt": "Grupo em visita a um espaço cultural decorado."
+    },
+    {
+      "src": "assets/img/galeria/educacao/complemento-escolar-01.jpg",
+      "alt": "Crianças estudando em mesas redondas na sala de apoio escolar."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-02.jpg",
+      "alt": "Crianças e educadores de mãos dadas em roda na quadra."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-02.jpg",
+      "alt": "Quatro crianças de uniforme posam em frente a uma porta branca."
+    },
+    {
+      "src": "assets/img/galeria/educacao/complemento-escolar-02.jpg",
+      "alt": "Crianças fazendo lição em volta da mesa, com cadernos e mochilas."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-03.jpg",
+      "alt": "Turma reunida no centro da quadra para foto, com mural pintado ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-03.jpg",
+      "alt": "Crianças de uniforme fazem sinal de positivo durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/complemento-escolar-03.jpg",
+      "alt": "Menino sorrindo de perto, na sala de apoio escolar."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-04.jpg",
+      "alt": "Ginastas perfiladas em apresentação, com plateia nas arquibancadas."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-04.jpg",
+      "alt": "Criança desenha em uma mesa digital interativa durante visita a museu."
+    },
+    {
+      "src": "assets/img/galeria/educacao/complemento-escolar-04.jpg",
+      "alt": "Educadora em pé diante do quadro-negro da sala de apoio escolar."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-05.jpg",
+      "alt": "Crianças em atividade de pintura nas mesas da sala."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-05.jpg",
+      "alt": "Turma de uniforme vermelho reunida para foto durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/complemento-escolar-05.jpg",
+      "alt": "Sala de apoio escolar com crianças estudando ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-06.jpg",
+      "alt": "Grupo de crianças e educadores sentados na escada, ao ar livre."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-06.jpg",
+      "alt": "Grupo de crianças e educador posando na calçada durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-07.jpg",
+      "alt": "Crianças desenhando em volta da mesa, com estante de livros ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-07.jpg",
+      "alt": "Três meninos de uniforme sorriem durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-08.jpg",
+      "alt": "Menina sorri durante atividade de desenho na sala."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-08.jpg",
+      "alt": "Turma reunida em frente à bandeira do clube durante a visita."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-09.jpg",
+      "alt": "Crianças na borda da piscina durante atividade aquática, com o morro ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-09.jpg",
+      "alt": "Grupo em escadaria de um espaço esportivo durante a visita."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-10.jpg",
+      "alt": "Educadoras acompanham crianças em atividade de artes na biblioteca."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-10.jpg",
+      "alt": "Turma reunida na área externa durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-11.jpg",
+      "alt": "Turma sentada na borda da piscina, com o Morro Dois Irmãos ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-11.jpg",
+      "alt": "Card de divulgação da visita do Complemento Escolar PPG à exposição Mundo Zira, no CCBB do Centro do Rio, com data e horários."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-12.jpg",
+      "alt": "Adolescentes em atividade de informática, acompanhados por um educador."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-12.jpg",
+      "alt": "Crianças sentadas na escadaria de um prédio durante a visita."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-13.jpg",
+      "alt": "Crianças brincando no parquinho durante passeio ao ar livre."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-13.jpg",
+      "alt": "Grupo à beira da piscina olímpica durante a visita."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-14.jpg",
+      "alt": "Criança mostra uma máscara de balão pintada na oficina de artes."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-14.jpg",
+      "alt": "Crianças e educadores reunidos em espaço cultural com balões."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-15.jpg",
+      "alt": "Sala de estudos com crianças em mesas redondas."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-15.jpg",
+      "alt": "Grupo em frente à entrada do Museu do Flamengo, na Gávea."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-16.jpg",
+      "alt": "Duas meninas fazendo careta para a câmera na sala do projeto."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-16.jpg",
+      "alt": "Educadora e criança posam juntas durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-17.jpg",
+      "alt": "Criança mostra um trabalho de artes montado em papel."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-17.jpg",
+      "alt": "Menino com crachá de visitante durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-18.jpg",
+      "alt": "Crianças usando computadores na sala de informática."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-18.jpg",
+      "alt": "Menino com crachá e mochila durante a visita."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-19.jpg",
+      "alt": "Crianças esperando a vez e usando os computadores da sala de informática."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-19.jpg",
+      "alt": "Menina sentada na escadaria durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-20.jpg",
+      "alt": "Crianças lado a lado usando os computadores da sala."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-20.jpg",
+      "alt": "Duas crianças se abraçam durante a visita."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-21.jpg",
+      "alt": "Duas crianças em atividade de informática na sala."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-21.jpg",
+      "alt": "Vista do gramado do estádio durante a visita."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-22.jpg",
+      "alt": "Menino interage com uma mesa digital durante visita a museu."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-22.jpg",
+      "alt": "Educadora e menina posam juntas em passeio noturno."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-23.jpg",
+      "alt": "Menino diante da sala de troféus durante visita ao museu do clube."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-23.jpg",
+      "alt": "Educadora e menina lado a lado durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-24.jpg",
+      "alt": "Duas meninas seguram juntas um cartaz em branco."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-24.jpg",
+      "alt": "Menino posa em frente a um navio durante a visita."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-25.jpg",
+      "alt": "Duas meninas posam com um cartaz durante a atividade."
+    },
+    {
+      "src": "assets/img/galeria/educacao/passeios-25.jpg",
+      "alt": "Menino faz sinal de paz no convés durante a visita ao navio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-26.jpg",
+      "alt": "Menina fazendo sinal de paz na sala do projeto."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-27.jpg",
+      "alt": "Menina posando para foto na sala do projeto."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-28.jpg",
+      "alt": "Criança de moletom sorrindo para a câmera."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-29.jpg",
+      "alt": "Criança posando para foto no corredor do projeto."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-30.jpg",
+      "alt": "Menina sorrindo na sala de informática."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-31.jpg",
+      "alt": "Menina posando para foto durante atividade na sala."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-32.jpg",
+      "alt": "Menina sorrindo para a câmera na sala do projeto."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-33.jpg",
+      "alt": "Menina com a camisa do Projeto Acolher, sorrindo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-34.jpg",
+      "alt": "Criança com a camisa do Projeto Acolher no corredor."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-35.jpg",
+      "alt": "Menina posando diante de um painel de mãos pintadas."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-36.jpg",
+      "alt": "Crianças fazendo lição em volta da mesa, sorrindo para a câmera."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-37.jpg",
+      "alt": "Menino de colete amarelo sentado na arquibancada, com o polegar erguido."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-38.jpg",
+      "alt": "Menino sorrindo na arquibancada durante o intervalo da atividade."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-39.jpg",
+      "alt": "Menino com a camisa do projeto, com os colegas ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-40.jpg",
+      "alt": "Menino com a camisa do projeto posando para foto."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-41.jpg",
+      "alt": "Menina com a camisa do projeto em trilha ao ar livre."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-42.jpg",
+      "alt": "Crianças sentadas juntas no palco durante a atividade."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-43.jpg",
+      "alt": "Crianças reunidas no palco, conversando."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-44.jpg",
+      "alt": "Crianças sentadas em fila no palco durante a atividade."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-45.jpg",
+      "alt": "Crianças em atividade de informática nas mesas da sala."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-46.jpg",
+      "alt": "Crianças usando notebooks na sala de atividades."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-47.jpg",
+      "alt": "Menina lendo um livro didático na sala do projeto."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-48.jpg",
+      "alt": "Criança escrevendo no caderno durante o reforço escolar."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-49.jpg",
+      "alt": "Menina em atividade de pintura, com potes de tinta sobre a mesa."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-50.jpg",
+      "alt": "Menina pintando com pincel na oficina de artes."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-51.jpg",
+      "alt": "Menino preenchendo uma ficha sobre a mesa."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-52.jpg",
+      "alt": "Duas crianças posando durante passeio à beira da lagoa."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-53.jpg",
+      "alt": "Duas crianças sorrindo em passeio ao ar livre, com o morro ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-54.jpg",
+      "alt": "Crianças durante visita a um espaço cultural."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-55.jpg",
+      "alt": "Duas meninas posam com um cartaz em frente a um letreiro colorido."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-56.jpg",
+      "alt": "Porta decorada com mãos pintadas e palavras escritas pelas crianças."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-57.jpg",
+      "alt": "Roda de conversa com educadoras em auditório."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-58.jpg",
+      "alt": "Criança concentrada na lição sobre a mesa da sala."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-59.jpg",
+      "alt": "Duas crianças sorriem durante o reforço escolar, com os cadernos abertos."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-60.jpg",
+      "alt": "Crianças e educador em atividade de recorte e colagem."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-61.jpg",
+      "alt": "Criança usando o computador na sala de informática."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-62.jpg",
+      "alt": "Menino usando notebook durante a atividade."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-63.jpg",
+      "alt": "Adolescente sentado à mesa da sala de informática."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-64.jpg",
+      "alt": "Card do Projeto Acolher com foto de uma aula de judô e o selo do Instituto da Criança."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-65.jpg",
+      "alt": "Card do Projeto Acolher com foto de ginastas de braços erguidos e o selo do Instituto da Criança."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-66.jpg",
+      "alt": "Crianças em atividade de artes na sala, com estante de livros ao fundo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-67.jpg",
+      "alt": "Criança equipada com capacete e cadeirinha antes do circuito de arvorismo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-68.jpg",
+      "alt": "Menina de capacete sorri antes da atividade de arvorismo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-69.jpg",
+      "alt": "Menina equipada para o arvorismo, fazendo careta para a câmera."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-70.jpg",
+      "alt": "Menina de capacete posa antes do circuito de arvorismo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-71.jpg",
+      "alt": "Menina equipada com capacete e cordas no parque de arvorismo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-72.jpg",
+      "alt": "Menina posa com o equipamento de arvorismo, em meio às árvores."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-73.jpg",
+      "alt": "Menina de capacete e cadeirinha em frente ao circuito de arvorismo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-74.jpg",
+      "alt": "Criança ajoelhada junto ao muro de escalada do parque."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-75.jpg",
+      "alt": "Criança atravessa a ponte suspensa do circuito de arvorismo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-76.jpg",
+      "alt": "Menina presa à corda de segurança durante o arvorismo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-77.jpg",
+      "alt": "Menino atravessa o cabo do circuito de arvorismo entre as árvores."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-78.jpg",
+      "alt": "Menino em equilíbrio no cabo de aço do arvorismo."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-79.jpg",
+      "alt": "Silhueta de criança em equilíbrio no cabo do arvorismo, contra o céu."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-80.jpg",
+      "alt": "Crianças descansando em um brinquedo do parque durante o passeio."
+    },
+    {
+      "src": "assets/img/galeria/educacao/educativo-81.jpg",
+      "alt": "Card do Projeto Acolher com o título Reforço Escolar."
+    }
+  ],
+  "convivencia": [
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-01.jpg",
+      "alt": "Card do Encontro Intersetorial com Mães Atípicas do PPG, com foto do grupo reunido e os logos das instituições parceiras."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-02.jpg",
+      "alt": "Card do Encontro Intersetorial com Mães Atípicas do PPG, com foto da roda de conversa no auditório."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-03.jpg",
+      "alt": "Roda de conversa com mães e profissionais sentadas em cadeiras no auditório."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-04.jpg",
+      "alt": "Participantes do encontro sentadas em roda, conversando."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-05.jpg",
+      "alt": "Entrada do espaço onde acontece o encontro, com mural colorido na parede."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-06.jpg",
+      "alt": "Oficina de culinária: duas participantes preparando ingredientes sobre a mesa."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-07.jpg",
+      "alt": "Participantes conversando sentadas durante a oficina."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-08.jpg",
+      "alt": "Participantes reunidas em volta da mesa durante a oficina."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-09.jpg",
+      "alt": "Grupo prepara uma receita em conjunto sobre a mesa da oficina."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-10.jpg",
+      "alt": "Participantes em pé e sentadas conversando durante a oficina."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-11.jpg",
+      "alt": "Criança ajuda a preparar a receita durante a oficina, acompanhada por uma educadora."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-12.jpg",
+      "alt": "Roda de conversa vista do fundo do auditório, com as participantes sentadas em círculo."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-13.jpg",
+      "alt": "Encontro no auditório, com as participantes sentadas em roda."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-14.jpg",
+      "alt": "Roda de conversa com participantes e agentes comunitárias de saúde."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-15.jpg",
+      "alt": "Auditório durante o encontro, com as participantes reunidas em círculo."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-16.jpg",
+      "alt": "Roda de conversa com agentes comunitárias de saúde entre as participantes."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-17.jpg",
+      "alt": "Encontro reunido em roda, visto do fundo do auditório."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-18.jpg",
+      "alt": "Participantes do encontro sentadas em roda de conversa."
+    },
+    {
+      "src": "assets/img/galeria/convivencia/maes-atipicas-19.jpg",
+      "alt": "Roda de conversa do encontro, com as participantes distribuídas em círculo."
+    }
+  ]
+}

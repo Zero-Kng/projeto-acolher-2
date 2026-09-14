@@ -9,6 +9,14 @@
   Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
 </IfModule>
 
+# Paginas consolidadas: Cultura entrou em Educacao e Cultura, Familias entrou
+# em Convivencia e Atendimento Familiar. Redireciona para nao quebrar link ja
+# compartilhado nem URL que o Google indexou pelo sitemap antigo.
+<IfModule mod_alias.c>
+  Redirect 301 /atividades-cultura.html /atividades-educacao.html
+  Redirect 301 /atividades-familias.html /atividades-convivencia.html
+</IfModule>
+
 # Pagina de erro 404 customizada
 ErrorDocument 404 /404.html
 

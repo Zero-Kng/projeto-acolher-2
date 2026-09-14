@@ -282,6 +282,9 @@ A linguagem de borda é filete de 1px em superfície e 2px em ação. Botões ca
 - **Internal Padding:** 24px (40px na caixa de doação).
 - **Card clicável:** o card inteiro é o link, com seta SVG em coral profundo visível em repouso — o sinal de destino não depende de hover. Hover/foco troca o filete para coral, sobe o fundo para branco e sublinha o título em 2px coral; a seta translada 4px, guardada por `prefers-reduced-motion`.
 
+- `.card-grid-prose` — modificador da grade para cards com texto corrido: `minmax(300px, 1fr)` em vez de 250px, para a medida de leitura nao cair abaixo de ~45 caracteres em telas largas. Usado nas paginas de atividade.
+- `.card-modalidade` — card em coluna flex com a etiqueta ancorada na base (`margin-top: auto`), para que cards da mesma linha alinhem as etiquetas.
+
 ### Inputs / Fields
 Não há formulário próprio no sistema (sem back-end). O único campo de dado é a **chave PIX**: campo creme com filete forte, raio de 6px, tipografia monoespaçada, `word-break: break-all`, com o botão de copiar em teal médio ao lado. O botão confirma de volta trocando o rótulo para "Copiado!" por 2s, com `window.prompt` como caminho de recuo — é o único momento do site em que algo responde ao visitante, e é onde o acabamento tem que ser inquestionável.
 
@@ -290,6 +293,13 @@ Header `sticky` em creme com filete inferior. Marca em 44px mais nome em peso 80
 
 ### Stat Band
 Faixa teal escuro de largura total, quatro células em grade com filete vertical translúcido entre elas. Número em 800 com numeral tabular; rótulo em 13–14px teal claro sobre escuro, travado em 22ch com `text-wrap: balance`. **Estática por decisão** — movimento perpétuo em dado institucional lê como enfeite.
+
+### Gallery Grid
+
+- `.gallery-grid` — grade de tres colunas fixas com `gap: 4px`, no formato de perfil de rede social. Tres colunas em qualquer largura, inclusive mobile.
+- `.gallery-item` — tile `aspect-ratio: 1` com `object-fit: cover`, raio de 2px. Em hover e foco a imagem escala 1.04 e escurece para 0.92, com guarda de `prefers-reduced-motion`.
+- `.lightbox` — ampliacao sobre fundo `rgba(18, 30, 31, 0.94)`, com contador tabular, legenda vinda do texto alternativo e botoes `.lightbox-btn` no mesmo sistema de traco das setas do carrossel. Fecha por Esc ou clique no fundo, navega por seta, trava a rolagem do corpo e devolve o foco ao tile de origem.
+- O tile e um `<a href>` real: sem JavaScript o clique abre a foto direto; com JavaScript, o clique e interceptado e amplia.
 
 ### Photo Carousel
 Moldura de 20px com `overflow: hidden`, proporção 4/3 (16/9 no mobile), fundo teal escuro enquanto a foto não carrega. A trilha translada com `transform` em 0.55s no easing do sistema (`cubic-bezier(0.16, 1, 0.3, 1)`). Setas circulares de 40px em creme com filete e sombra leve, hover para branco com traço coral profundo. Pontos de 8px em branco translúcido; o ponto atual vira uma barra de 22px em branco pleno. Setas e pontos ficam `hidden` até o JS confirmar mais de uma foto.

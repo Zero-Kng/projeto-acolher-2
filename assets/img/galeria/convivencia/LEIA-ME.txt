@@ -1,0 +1,7 @@
+Coloque aqui as fotos da pagina convivencia.
+
+Leia as instrucoes e as regras de uso de imagem em ../LEIA-ME.txt
+antes de enviar qualquer foto.
+
+Depois de colocar o arquivo aqui, acrescente a linha correspondente em
+content/galerias.json, na lista "convivencia".
